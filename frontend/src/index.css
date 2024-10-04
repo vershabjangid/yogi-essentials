@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap');
+* {
+    font-family: Raleway;
+}
+
+.home_main {
+    background-image: url(../src/images/tea-picker-woman-s-asian-hands-close-up-pretty-tea-picking-girl-plantation.jpg );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.home_main {
+    animation: banner 5s 0s linear;
+    position: fixed;
+    z-index: -9999;
+    opacity: 0;
+}
+
+@keyframes banner {
+    0% {
+        position: fixed;
+        opacity: 1;
+        z-index: 9999;
+    }
+
+    25% {
+        position: fixed;
+        opacity: 0.8;
+    }
+
+    50% {
+        position: fixed;
+        opacity: 0.5;
+    }
+
+    100% {
+        position: fixed;
+        opacity: 0;
+        z-index: -9999;
+    }
+}
+
+.banner_logo {
+    top: 240px;
+    position: relative;
+}
+
+.banner_logo>img {
+    position: absolute;
+    animation: logoslide 1s 0s linear;
+    right: 0%;
+}
+
+.web_banner_content {
+    position: relative;
+    top: 200px;
+    animation: logoslide 2s 0s linear;
+}
+
+
+
+@keyframes logoslide {
+    0% {
+        right: -100%;
+    }
+
+    25% {
+        right: -75%;
+    }
+
+    50% {
+        right: -50%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+.logo_heading {
+        font-weight: 600;
+        font-style: normal;
+      
+}
+
+.header_options>ul>li{
+    /* color: #534931; */
+}
+
+
+.welcome_banner{
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/5207385.jpg');
+    background-blend-mode: color-burn;
+}
+
+.about_main{
+    background-size: cover;
+    background-position: right;
+}
+
+.footer_info{
+    font-family: sans-serif;
+}
+
+.about_banner{
+    background-image: url('images/collection-common-food-allergens-people.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.products_banner{
+    background-image: url('images/still-life-with-appetizing-bakery-food.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+input[type=number]::-webkit-inner-spin-button{
+    display: none;
+}
